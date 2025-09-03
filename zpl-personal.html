@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你的名字 - 个人主页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        /* 顶部标题区 */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+        }
+        .header-wrap {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .avatar {
+            width: 72px;
+            height: 72px;
+            border-radius: 8px; /* 圆角头像，改成50%可变圆形 */
+            object-fit: cover;
+            flex-shrink: 0;
+            background: #fff2;
+        }
+        .title-block h1 {
+            margin: 0 0 4px 0;
+            font-size: 28px;
+            line-height: 1.2;
+        }
+        .title-block p {
+            margin: 0;
+            opacity: 0.9;
+        }
+        /* 导航栏 */
+        nav {
+            background-color: #34495e;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover, nav a.active {
+            background-color: #e74c3c;
+        }
+        /* 主体内容 */
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+        }
+        h2 {
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 5px;
+        }
+        /* 页脚 */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 30px;
+        }
+        /* 小屏幕适配 */
+        @media (max-width: 520px) {
+            .header-wrap {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .avatar {
+                width: 64px;
+                height: 64px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-wrap">
+        <img class="avatar" src="ZPL_photo.jpg" alt="你的姓名 头像">
+        <div class="title-block">
+            <h1>Zhang Pilan</h1>
+            <p>复旦大学高分子科学系 | 冷冻透射电镜技术 | 高分子材料</p>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <a href="#" class="active">首页</a>
+    <a href="#publications">论文</a>
+    <a href="#research">研究</a>
+    <a href="#teaching">教学</a>
+</nav>
+
+<main>
+    <section id="about">
+        <h2>关于我</h2>
+        <p>复旦大学高分子科学系在读博士生，在这里我将分享个人科研成果和领域前沿动态。</p>
+        <h3>教育背景</h3>
+        <ul>
+            <li>2022 至今， 博士在读，材料与化工，复旦大学高分子科学系
+                导师：徐一飞 青年研究员
+
+            </li>
+            <li>2017 - 2020 硕士，材料工程，中国科学技术大学</li>
+        </ul>
+    </section>
+
+    <section id="publications">
+        <h2>代表论文</h2>
+        <ol>
+            <li>PL Zhang. et al. <em>Enhancing the Electron Radiation Resistance of Macromolecules in Cryo-TEM Imaging Using Sodium Ascorbate</em>. Macromolecules, 2024.</li>
+            <li>PL Zhang. et al. <em>Response of Organic Solvents to Vitrification and Electron Exposure in Cryo-TEM Experiments</em>. Responsive Materials, 2023.</li>
+        </ol>
+    </section>
+
+    <section id="research">
+        <h2>研究方向</h2>
+        <ul>
+            <li>冷冻透射电镜(Cryo-TEM)在高分子领域的方法学研究</li>
+            <li>原位追踪聚合物结晶过程中间态</li>
+            <li>软物质在电子辐照过程中的稳定性研究</li>
+        </ul>
+    </section>
+
+    <section id="teaching">
+        <h2>教学经历</h2>
+        <ul>
+            <li>2022-2023 《奇妙的软物质》助教，复旦大学</li>
+        </ul>
+    </section>
+
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 Zhang Pilan | 联系方式: pilanzhang@gmail.com</p>
+</footer>
+
+</body>
+</html>
